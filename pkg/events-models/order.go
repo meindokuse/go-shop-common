@@ -1,9 +1,9 @@
-package events
+package eventsmodels
 
 import (
 	"time"
 
-	servicedto "github.com/meindokuse/goShopPkg/pkg/service-dto"
+	servicedto "github.com/meindokuse/go-shop-common/pkg/service-dto"
 )
 
 
