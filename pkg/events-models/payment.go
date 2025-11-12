@@ -11,7 +11,7 @@ type PaymentProcessedEvent struct {
 	Timestamp     time.Time `json:"timestamp"`
 }
 
-type PaymentRefundRequestedEvent struct {
+type PaymentRefundEvent struct {
     OrderID       string    `json:"order_id"`
     TransactionID string    `json:"transaction_id"`
     Reason        string    `json:"reason"`
