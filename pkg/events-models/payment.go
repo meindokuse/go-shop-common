@@ -7,7 +7,6 @@ type PaymentProcessedEvent struct {
 	TransactionID string    `json:"transaction_id"`
 	Amount        float64   `json:"amount"`
 	Status        string    `json:"status"`
-	Error         string    `json:"error,omitempty"`
 	Timestamp     time.Time `json:"timestamp"`
 }
 

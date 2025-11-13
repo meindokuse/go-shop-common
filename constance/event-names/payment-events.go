@@ -1,4 +1,4 @@
 package eventnames
 
-const PaymentProcessedEvent = "PaymentProcessedEvent"
-const PaymentRefundEvent = "PaymentRefundEvent"
+const PaymentSuccesedEvent = "PaymentSuccesedEvent"
+const PaymentFailedEvent = "PaymentFailedEvent"

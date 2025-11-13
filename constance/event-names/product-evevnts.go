@@ -1,4 +1,4 @@
 package eventnames
 
-const InventoryReservedEvent = "InventoryReservedEvent"
-const InventoryReleaseEvent = "InventoryReleaseEvent"
+const ProductSuccesedReserved = "ProductSuccesedReserved"
+const ProductFailedReserved = "ProductFailedReserved"
