@@ -6,7 +6,8 @@ type ProductDescrateSuccessEvent struct {
 	IdmKey	      string    `json:"idm_key"`
 	UserID      string      `json:"user_id"`
 	OrderID       string    `json:"order_id"`
-	TotalAmount	  int		`json:"total_amount"`
+	TotalAmount	  float64		`json:"total_amount"`
+	ReservedItems map[string]int	`json:"reserved_ids"`
 	Timestamp     time.Time `json:"timestamp"`
 }
 

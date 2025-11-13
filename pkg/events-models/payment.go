@@ -10,8 +10,9 @@ type PaymentProcessedEvent struct {
 }
 
 type PaymentFailedEvent struct {
-    OrderID       string    `json:"order_id"`
-    IdmKey	      string    `json:"idm_key"`
-    Reason        string    `json:"reason"`
-    Timestamp     time.Time `json:"timestamp"`
+    OrderID       string   			`json:"order_id"`
+    IdmKey	      string   			`json:"idm_key"`
+	ReservedItems map[string]int	`json:"reserved_ids"`
+    Reason        string    		`json:"reason"`
+    Timestamp     time.Time 		`json:"timestamp"`
 }
