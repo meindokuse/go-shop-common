@@ -2,10 +2,9 @@ package eventsmodels
 
 import "time"
 
-type ReservedEvent struct {
+type ProductReservedEvent struct {
 	OrderID       string    `json:"order_id"`
-	ReservationID string    `json:"reservation_id"`
-	Status        string    `json:"status"` 
+	TotalAmount	  int		`json:"total_amount"`
 	Timestamp     time.Time `json:"timestamp"`
 }
 
