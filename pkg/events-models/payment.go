@@ -4,15 +4,14 @@ import "time"
 
 type PaymentProcessedEvent struct {
 	OrderID       string    `json:"order_id"`
-	TransactionID string    `json:"transaction_id"`
+	IdmKey	      string    `json:"idm_key"`
 	Amount        float64   `json:"amount"`
-	Status        string    `json:"status"`
 	Timestamp     time.Time `json:"timestamp"`
 }
 
-type PaymentRefundEvent struct {
+type PaymentFailedEvent struct {
     OrderID       string    `json:"order_id"`
-    TransactionID string    `json:"transaction_id"`
+    IdmKey	      string    `json:"idm_key"`
     Reason        string    `json:"reason"`
     Timestamp     time.Time `json:"timestamp"`
 }
