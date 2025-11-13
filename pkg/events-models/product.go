@@ -4,6 +4,7 @@ import "time"
 
 type ProductDescrateSuccessEvent struct {
 	IdmKey	      string    `json:"idm_key"`
+	UserID      string      `json:"user_id"`
 	OrderID       string    `json:"order_id"`
 	TotalAmount	  int		`json:"total_amount"`
 	Timestamp     time.Time `json:"timestamp"`
