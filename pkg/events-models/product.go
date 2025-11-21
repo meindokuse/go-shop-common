@@ -18,3 +18,11 @@ type ProductDescrateFailedEvent struct {
 	Timestamp     time.Time `json:"timestamp"`
 }
 
+type ProductReleaseEvent struct {
+	IdmKey	      string    `json:"idm_key"`
+	UserID      string      `json:"user_id"`
+	OrderID       string    `json:"order_id"`
+	ReservedItems map[string]int	`json:"reserved_ids"`
+	Timestamp     time.Time `json:"timestamp"`
+}
+
