@@ -16,13 +16,6 @@ type OrderCreatedEvent struct {
 	Timestamp   time.Time          `json:"timestamp"`
 }
 
-type OrderReadyToPay struct {
-	OrderID   string    `json:"order_id"`
-	IdmKey	      string    `json:"idm_key"`
-	TotalAmount float64 `json:"total_amount"`
-	Timestamp time.Time `json:"timestamp"`
-}
-
 type OrderCancelledEvent struct {
 	OrderID   string    `json:"order_id"`
 	IdmKey	  string    `json:"idm_key"`
