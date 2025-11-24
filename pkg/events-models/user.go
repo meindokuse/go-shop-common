@@ -10,6 +10,5 @@ type UserCreated struct {
 
 type UserUpdateName struct {
 	UserID string `json:"user_id"`
-	OldNmae	string `json:"old_name"`
 	NewName string `json:"new_name"`
 }
